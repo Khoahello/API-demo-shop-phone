@@ -530,6 +530,18 @@ body {
   margin-top: 10px;
   transition: 0.4s;
 }
+#sanPham #tab-ALL,
+#sanPham #tab-Samsung,
+#sanPham #tab-Iphone {
+  min-height: 400px;
+}
+#sanPham #tab-ALL .emptyProduct,
+#sanPham #tab-Samsung .emptyProduct,
+#sanPham #tab-Iphone .emptyProduct {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
 
 #thong-tin-sp {
   margin-top: 20px;
@@ -588,5 +600,10 @@ body {
   }
   #showThongTinSanPham .stars {
     display: flex;
+  }
+}
+@media screen and (max-width: 280.5px) {
+  #sanPham #pills-tab {
+    display: block;
   }
 }/*# sourceMappingURL=index.css.map */

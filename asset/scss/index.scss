@@ -638,6 +638,16 @@ body {
 		margin-top: 10px;
 		transition: 0.4s;
 	}
+	#tab-ALL,
+	#tab-Samsung,
+	#tab-Iphone {
+		min-height: 400px;
+		.emptyProduct {
+			width: 100%;
+			text-align: center;
+			justify-content: center;
+		}
+	}
 }
 
 // Thông tin sản phẩm
@@ -703,6 +713,14 @@ body {
 		}
 		.stars {
 			display: flex;
+		}
+	}
+}
+
+@media screen and (max-width: 280.5px) {
+	#sanPham {
+		#pills-tab {
+			display: block;
 		}
 	}
 }

@@ -79,9 +79,23 @@ function renderProductList(List) {
             contentHTML_Iphone += trString
         }
     });
-    document.getElementById("tab-ALL").innerHTML = contentHTML_All
-    document.getElementById("tab-Samsung").innerHTML = contentHTML_Samsung
-    document.getElementById("tab-Iphone").innerHTML = contentHTML_Iphone
+    if (contentHTML_All.length == 0) {
+      document.getElementById("tab-ALL").innerHTML = `<p class="emptyProduct">Không có sản phẩm</p>`
+      document.getElementById("tab-Samsung").innerHTML = `<p class="emptyProduct">Không có sản phẩm</p>`
+      document.getElementById("tab-Iphone").innerHTML = `<p class="emptyProduct">Không có sản phẩm</p>`
+    } else {
+      document.getElementById("tab-ALL").innerHTML = contentHTML_All
+    }
+    if (contentHTML_Samsung.length == 0) {
+      document.getElementById("tab-Samsung").innerHTML = `<p class="emptyProduct">Không có sản phẩm</p>`
+    } else {
+      document.getElementById("tab-Samsung").innerHTML = contentHTML_Samsung
+    }
+    if (contentHTML_Iphone.length == 0) {
+      document.getElementById("tab-Iphone").innerHTML = `<p class="emptyProduct">Không có sản phẩm</p>`
+    } else {
+      document.getElementById("tab-Iphone").innerHTML = contentHTML_Iphone
+    }
 }
 
 function showThongTinSanPham(item) {
