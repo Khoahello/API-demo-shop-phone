@@ -717,10 +717,13 @@ body {
 	}
 }
 
-@media screen and (max-width: 280.5px) {
+@media screen and (max-width: 360.5px) {
 	#sanPham {
 		#pills-tab {
 			display: block;
 		}
+	}
+	#sidebar-cart {
+		width: 250px
 	}
 }
